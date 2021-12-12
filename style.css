@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+}
+
+#container {
+    padding: 1rem;
+    background: #6e79ff;
+    width: 16rem;
+    height: 16rem;
+    border-radius: 0 0 5rem 0;
+
+}
+
+#clock {
+    height: 13rem;
+    width: 13rem;
+    border-radius: 50%;
+    background: white url(clock.svg) no-repeat center;
+    box-shadow: #6e79ff 0 0 1rem;
+    background-size: 90%;
+}
+
+#clockCenter {
+    border-radius: 50%;
+    width: 10%;
+    height: 10%;
+}
+
+#containerHours, #containerMinutes, #containerSeconds, #containerClockCenter {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    left: 1rem;
+    bottom: 1rem;
+    height: 13rem;
+    width: 13rem;
+}
+
+#hours, #minutes, #seconds, #clock:after, #clockCenter {
+    background: black;
+    position: absolute;
+}
+
+#hours, #minutes, #seconds {
+    transform-origin: 50% 100%;
+}
+
+#clockCenter {
+    left: 45%;
+    top: 45%;
+}
+
+/* Position & size: Hours / Minutes / Seconds */
+#hours {
+    height: 20%;
+    left: 49%;
+    top: 30%;
+    width: 2.5%;
+}
+
+#minutes {
+    height: 40%;
+    left: 49%;
+    top: 10%;
+    width: 2%;
+}
+
+#seconds {
+    background: #ff6e6e;
+    height: 48%;
+    left: 49%;
+    width: 1%;
+}
+
+/* Transitions Aiguilles: Minutes / Secondes: */
+#minutes {
+    transition: transform 0.3s cubic-bezier(.4,2.08,.55,.44);
+}
+#seconds {
+    transition: transform 0.3s cubic-bezier(.4,2.08,.55,.44);
+}
