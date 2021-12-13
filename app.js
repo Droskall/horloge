@@ -16,7 +16,7 @@ function clock (){
     let minutes = date.getMinutes()
     let seconds = date.getSeconds();
 
-    let timeOut = setTimeout(function (){
+    let timeOut = setTimeout( () =>{
 
         let time = [
             {

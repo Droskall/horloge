@@ -10,11 +10,8 @@ body {
 
 #container {
     padding: 1rem;
-    background: #6e79ff;
     width: 16rem;
     height: 16rem;
-    border-radius: 0 0 5rem 0;
-
 }
 
 #clock {
@@ -22,7 +19,7 @@ body {
     width: 13rem;
     border-radius: 50%;
     background: white url(clock.svg) no-repeat center;
-    box-shadow: #6e79ff 0 0 1rem;
+    box-shadow: #00000b 0 0 1rem;
     background-size: 90%;
 }
 
@@ -76,6 +73,11 @@ body {
     height: 48%;
     left: 49%;
     width: 1%;
+}
+
+#date {
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 /* Transitions Aiguilles: Minutes / Secondes: */
